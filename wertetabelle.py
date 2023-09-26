@@ -30,9 +30,9 @@ def getXToThePowerOf2(start, end, step):
     return XToThePowerOf2
 
 def getHeader():
-    print("________________________________________________________________")
+    print("|______________________________________________________________|")
     print("|      x-Wert        |         x^2        |         1/x        |")
-    print("‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾")
+    print("|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾|")
 
 def printLines():
     division = getOneThroughX(start, end, step)
@@ -40,10 +40,10 @@ def printLines():
 
     for i in range(len(division)):
         if (division[i] == "NICHT DEFINIERT"):
-            print("|      {0:8.2f}      |      {1:8.4f}      |  NICHT DEFINIERT   |".format(i, power[i]))
+            print("|      {0:8}      |      {1:8.4f}      |  NICHT DEFINIERT   |".format(i, power[i]))
             continue
 
-        print("|      {0:8.2f}      |      {1:8.4f}      |      {2:8.4f}      |".format(i, power[i], division[i]))
+        print("|      {0:8}      |      {1:8.4f}      |      {2:8.4f}      |".format(i, power[i], division[i]))
 
 
 getHeader()
