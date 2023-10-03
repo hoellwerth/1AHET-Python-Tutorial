@@ -12,14 +12,9 @@ meine_liste.append(50)
 
 print(meine_liste)
 
-summe = 0
-for i in meine_liste:
-    summe += i
-
-print(summe)
+print(sum(meine_liste))
 
 meine_liste.remove(30)
-
 
 print(40 in meine_liste)
 
