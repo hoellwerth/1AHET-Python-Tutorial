@@ -8,7 +8,7 @@ meine_liste.append(10)
 meine_liste.append(20)
 meine_liste.append(30)
 meine_liste.append(40)
-meine_liste.append(50)
+meine_liste.append(50)  
 
 print(meine_liste)
 

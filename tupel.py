@@ -1,3 +1,7 @@
+import os
+
+os.system("clear")
+
 # 1.
 mein_tupel = ("Apfel", "Banane", "Kirsche", "Dattel", "Erdbeere")
 

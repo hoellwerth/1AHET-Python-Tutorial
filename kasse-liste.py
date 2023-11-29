@@ -22,10 +22,17 @@ def einlesen():
 
     if stückzahl == 0:
         return False
+    try:
+        preis = float(input("Preis: "))
+    except:
+        print("Bitte gib eine Zahl ein!")
+        return None
 
-    preis = float(input("Preis: "))
-
-    produktname = input("Produktname: ")
+    try:
+        produktname = input("Produktname: ")
+    except:
+        print("Bitte gib eine Zahl ein!")
+        return None
 
     return [stückzahl, preis, produktname]
 
